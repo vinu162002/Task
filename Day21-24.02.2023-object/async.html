@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Async</title>
+    </head>
+    <body>
+        <script>
+
+        console.log('first');
+        console.log('second');            //Synchronous
+        console.log('third');
+
+        console.log('Hello');
+        function sync() {
+            console.log('First1');
+            console.log('second2');            //Synchronous
+            console.log('third3');
+        }
+        sync();
+        console.log('One');
+        setTimeout(() => console.log('Two'), 4000);         //Asynchronous
+        console.log('three');
+
+        
+        </script>
+    </body>
+</html>

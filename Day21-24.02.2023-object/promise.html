@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promises</title>
+    </head>
+    <body>
+        <script>
+            function samp(){
+            return new Promise((resolve,reject) =>{
+                let l= 'good';
+                if(l ==='good'){
+                    resolve();
+                }
+                else{
+                    reject();
+                }
+            })};
+            // samp.then(()=>console.log(' Pass in the exam '))
+            // .catch(()=>console.log("Failed in the exam"));
+            samp().then(success)
+            .catch(failure);
+            function success(){
+                console.log('Congrats! You are eligible for next exam');
+            }
+            function failure(){
+                console.log("Please try again to get pass in the exam");
+            }
+        </script>
+    </body>
+</html>
