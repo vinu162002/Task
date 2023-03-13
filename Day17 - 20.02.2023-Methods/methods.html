@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String Methods</title>
+    </head>
+    <body>
+        <script>
+            const len='string methods';
+            console.log('The length is = ', len.length);              //string length
+
+            for(let i of len){
+                console.log(i);
+            }
+
+            const st = 'There is a new updation ';
+            console.log(st.charAt(3));            //charAt
+            const l = st.length;
+            console.log(l);
+
+            console.log(st.at(-6));            //at
+            console.log(st.slice(-3,-2));      //slice
+
+            console.log(st.charCodeAt(2));         //charCodeAt()   returns Unicode value to charaters
+
+            console.log(st.codePointAt(5));        //codePointAt()     returns the position's code value
+            
+            const ll='in app';
+            console.log(st.concat(ll));             //concat()
+            console.log(" ".concat(st));
+
+            console.log(st.endsWith(" "));
+            console.log(st.endsWith('is',8));         //endsWith , returns true or false
+
+            console.log(String.fromCharCode(97,98,99));       //fromCharCode  returns code's character
+            console.log(String.fromCharCode('0x2014'));
+
+            console.log(String.fromCodePoint(42));        //fromCodePoint   return the code value
+            console.log(String.fromCodePoint(0x404));
+ 
+            const word='new';
+            console.log(`Check if the sentence containes "${word}" ${st.includes(word) ? 'is' : 'is not'} there`);
+            console.log('white Brown Pink'.includes('brown'));     //includes(),returns true or false,,case -sensitive
+       </script>
+    </body>
+</html>
