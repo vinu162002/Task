@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Looping</title>
+</head>
+
+<body>
+    <script>
+        const num = 10;
+        for (let i = 1; i <= num; i++) {
+            console.log(i);
+            if (i === num - 1) {
+                console.log(i);
+                break;
+            }
+        }
+
+
+        const num1 = 10;
+        for (let i = 1; i <= num1; i++) {
+            console.log(i);
+            if (i === num1 - 1) {
+                console.log(i);
+                continue;
+            }
+        }
+
+        var pet = ['dog', 'cat', 'fish'];
+        let pet1;
+        const len = pet.length;
+        let i = 0;
+        while (i < len) {
+            if (i === len - 1) {
+                pet1 = `My Favourite pet is "${pet[i]}"`;
+                break;
+            }
+            i++;
+        }
+        console.log(pet1);
+
+
+        // const value = 10;
+        // let j = 1;
+        // do {
+        //     //console.log(j);
+        //     if (j % 2 === 0) {
+        //         console.log("Even number:", j);
+        //     }
+        //     else {
+        //         console.log("Odd number:", j);
+        //     }
+        //     j++;
+        // }
+        // while (j <= value)
+
+
+        function name(){
+            return (`Hello ${str}`);
+        }
+        const str='Kevin';
+        console.log(name(str));
+
+        
+        const number = [21, 32, 44, 76, 97, 9];
+        var even=[], odd=[];
+        let k = 0 ,ev_ind=0,od_ind=0;
+        for (k = 0; k < number.length; k++) {
+            if (number[k] % 2 === 0) {
+                even[ev_ind] = number[k];
+                ev_ind++;
+            }
+            else {
+                odd[od_ind] = number[k];
+                od_ind++;
+            }   
+        }
+        console.log('Even Numbers:', even);
+        console.log('Odd Numbers:', odd);
+
+        
+
+
+        let a = 10, b = 60, c;
+        c = a + b;
+        console.log(c);
+
+    </script>
+</body>
+
+</html>
