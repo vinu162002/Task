@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ES6</title>
+</head>
+
+<body>
+    <script>
+        let a = [15, 65, 23, 88], b = "";
+        for (let i of a) {
+            b += i + " ";
+        }
+        console.log(b);
+
+        let c = 'String', d = '';
+        for (let j of c) {
+            d += j + "";
+        }
+        console.log(d);
+
+        const fruits = new Map([
+            ['orange', 500],
+            ['apples', 200],
+            ['guava', 820]
+        ]);
+        console.log(fruits.get('guava'));
+
+        const samp = new Set();
+        samp.add('56');
+        samp.add('9');
+        samp.add('33');
+        samp.add('14');
+        samp.add('87');
+        console.log(samp.size);
+
+        const pro = new Set([1, 2, 2, 3, 4]);
+        console.log(pro);
+
+        const val = [2, 6, 8, 3];
+        console.log(val.map(v => v + 2));
+
+        const str = ['lion', 'bird', 'fox', 'deer', 'dog'];
+        const res = str.filter(str => str.length > 3);
+        console.log(res);
+
+        let i = 0;
+        const result = val.reduce((value1, value2) => value1 + value2, i);
+        console.log(result);
+
+    </script>
+</body>
+
+</html>
