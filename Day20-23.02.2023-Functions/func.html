@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions</title>
+        <style>
+            #hello{
+                width:200px;
+                height:50px;
+                padding:10px;
+                color:green;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Greeting</h1>
+        <button id="hello" onclick="save()">Greet</button>
+        <script>
+            const a = document.getElementById('hello');
+            function save(){
+                let n='Vinudharshini';
+                a.textContent = `Hello ,${n}`;
+                alert(a.textContent);
+                a.textContent ='Greet';
+            }
+            
+           const name='Sita';
+           let n=10;
+           while(n>=1){
+              console.log(name);
+              greet();
+              n--;
+           }
+       
+           
+        </script>
+    </body>
+</html>

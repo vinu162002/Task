@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events</title>
+    </head>
+    <body>
+        <h1>Color Changes</h1>
+        <p>Click to see color</p>
+        <button>Click it</button>
+        <br>
+        <hr>
+        <input type="text" id="text">
+        <div id="value"></div>
+
+        <script>
+            var clr=document.querySelector('button');
+
+            clr.addEventListener('click',change);
+            var i=0;
+            function change(){
+                var colorlist=['lightgray','yellow','orange','gray'];
+                let l=colorlist.length;
+                document.body.style.backgroundColor = colorlist[i];
+                i++;
+                if(i===l){
+                    i=0;
+                }
+            }
+
+            const t =document.querySelector('input');
+            const j=document.querySelector('div');
+
+            t.addEventListener('keydown', (event)=> (j.textContent=`You have pressed "${event.key}"`));
+
+            //object
+            const person = {
+                name:['Vinu' , 'Anira'],
+                age:20,
+                job:['student','teacher'],
+                address(){
+                    return (`${this.name[0]} ,120,2nd street,gobi`);
+                },
+                bio(){
+                    console.log(`${this.name[1]} is ${this.age} years old`);
+                }
+            };
+
+            console.log(person.name);
+            console.log(person.name[1]);
+            console.log(person.job);
+            console.log(person.address());
+            person.bio();
+
+
+            
+            function persondetails(){
+                const str={};
+                str.name='Dia';
+                str.age=12;
+        
+                return str;
+            }
+            console.log(persondetails());
+        
+            //class
+            class detail{
+                name;
+                intro (){
+                    console.log(`I am ${this.name}`);
+                }
+            }
+            const st1=new detail();
+            st1.name='Vinu';
+            st1.intro();
+            const st2=new detail();
+            st2.name='priya';
+            st2.intro();
+
+            //constructor without parameters
+            class student{
+                constructor(){
+                    console.log("Constructor");
+                }
+                age;
+                identity(){
+                    console.log(`her age is ${this.age}`);
+                }
+            }
+            const obj = new student();
+            obj.age=13;
+            obj.identity();
+
+            //constructor with parameters
+            class school{
+                staff;
+                constructor(staff,count){
+                    this.staff=staff;
+                    this.count=count;
+                    console.log("Constructor");
+                }
+                teaching(){
+                    console.log(this.staff);
+                    console.log(this.count);
+                }
+            }
+            const ob= new school('Maths',5);
+            ob.teaching();
+            
+            //inheritance
+            class places{
+                constructor(visit){
+                    this.visit=visit;
+                    console.log("Am in parent constructor");
+                }
+                travels(){
+                    console.log(this.visit);
+                }
+            }
+            class people extends places{
+                constructor(visit){
+                    super(visit);
+                    console.log('In child constructor');
+                }
+            }
+            const tourist=new people('Mangalore');
+            tourist.travels();
+
+            
+
+        </script>
+    </body>
+</html>
