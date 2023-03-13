@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promises </title>
+    </head>
+    <body>
+        <script>
+            const first=new Promise((resolve,reject)=> {
+                let f=true
+                if(f){
+                    setTimeout(resolve,3000,'Ram reached')
+                }
+                else{
+                    reject('Ram not reached');
+                }
+            })
+              const second =new Promise((resolve,reject)=> {
+                let f=true
+                if(f){
+                    setTimeout(resolve,2000,'Vasu reached')
+                }
+                else{
+                    reject('Vasu not reached');
+                }
+              })
+              const third =new Promise((resolve,reject)=> {
+                let f=false
+                if(f){
+                    setTimeout(resolve,1000,'Kevin reached')
+                }
+                else{
+                    reject('Kevin not reached');
+                }
+              })
+
+            //   Promise.all([first,second,third])
+            //   .then((message)=>console.log(message))
+            //   .catch((message)=>console.log(message))
+            //   Promise.allSettled([first,second,third])
+            //   .then((message)=>console.log(message))
+            //   .catch((message)=>console.log(message))
+            //   Promise.any([first,second,third])
+            //   .then((message)=>console.log(message))
+            //   .catch((message)=>console.log(message))
+              Promise.race([first,second,third])
+              .then((message)=>console.log(message))
+              .catch((message)=>console.log(message))
+        </script>
+    </body>
+</html>

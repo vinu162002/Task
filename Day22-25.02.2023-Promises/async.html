@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ASYNC</title>
+    </head>
+    <body>
+        <script>
+            const A = new Promise((resolve,reject)=> {
+                let samp=false;
+                if(samp){
+                    setTimeout(resolve,3000,'Raja\'s ticket is confirmed');
+                }
+                else{
+                    reject('Raja\'s ticket is cancelled');
+                }
+            })
+
+            async function example(){
+                try{
+                const res= await A;
+                console.log(res);
+                console.log('Thank you');
+                }
+                catch(error){
+                    console.log(error);
+                }
+            }
+            example();
+        </script>
+    </body>
+</html>
