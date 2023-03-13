@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sum</title>
+</head>
+
+<body>
+    <script>
+        //sum
+        const arr = [2, 7, 11, 15];
+        let a;
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = i + 1; j < arr.length; j++) {
+                if (arr[i] + arr[j] === 13) {
+                    a = [i,j];
+                }
+            }
+        }
+        console.log(a);
+
+        //odd even
+        const num=[12,6,44,53,3];
+        let even=[];
+        let odd=[];
+        num.forEach((element)=>{
+            if(element%2===0){
+                even.push(element);
+            }
+            else{
+                odd.push(element);
+            }
+        })
+        console.log(even);
+        console.log(odd);
+
+        //1.apple .............
+        const array=['apple','berry','carrot','dragonfruit'];
+        let k=1;
+        array.forEach((element)=>{
+            console.log(`${k++} . ${element}`);
+        })
+
+        const number = [1,2,5,4,5];
+        let arr1;
+        for(let i=0;i<number.length;i++){
+            for(let j=i+1;j<number.length;j++){
+                if(number[i]===number[j]){
+                    arr1=number[i];
+                }
+            }
+        }
+        console.log(arr1);
+ </script>
+</body>
+</html>

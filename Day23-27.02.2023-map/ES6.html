@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ES6</title>
+</head>
+
+<body>
+    <script>
+        
+
+
+        x=10;
+        console.log(x);
+        var x = 10;
+
+
+
+        var nums = [45, 66, 33];
+        let fives = [];
+        nums.forEach((v) => {
+            if (v % 5 === 0)
+                fives.push(v);
+        });
+        console.log(fives);
+
+        function f(x, y = 7, z = 42) {
+            return x + y + z
+        }
+        console.log(f(1) === 50);
+
+
+    </script>
+</body>
+
+</html>
