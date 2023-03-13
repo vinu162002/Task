@@ -1,0 +1,36 @@
+html{
+    background-color:lightgrey;
+    text-align: center;
+
+}
+p{
+    text-align:center;
+    font-size: large;
+}
+h1{
+    text-align: center;
+    color:darkgreen;
+}
+h2{
+    text-align: center;
+    color:darkorange;
+}
+h3{
+    text-align: center;
+    color:darkorange;
+}
+a{
+    text-decoration: none;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid;
+    letter-spacing:1px;
+    font-size: 0.8rem;
+}
+
+td ,th {
+    border: 1px solid ;
+    padding: 10px 20px;
+    text-align: center;
+  }
