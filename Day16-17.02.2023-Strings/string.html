@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>String</title>
+</head>
+
+<body>
+    <script>
+        const st = 'I\'m 20 years old';    //Escape character using '\'
+        console.log(st);
+
+        const wd = 'vinu';
+        const kv = `hi, ${wd}`;     //Concatenation
+        console.log(kv);
+
+
+        console.log("cat".charAt(0));    //character access
+
+        const comp ="computer";
+        const bla =String('12');
+        const tl=String(true);                    //string primitive and string object
+        const gol = new String('computer');
+
+        console.log(typeof comp, typeof bla , typeof tl , typeof gol);
+        console.log(gol);
+
+        const s1='2+9';
+        const s2=new String('2+2');
+        console.log(eval(s1));                          //string eval
+        console.log(eval(s2));
+        console.log(eval(s2.valueOf()));
+    
+        const a=new String("Hello World");      //it will print like string{"Hello World"}
+        const b=String("Hello World");           //print like Hello World
+        if(a===b)
+        {
+            console.log(a);
+        }
+        else{
+            console.log('They are not equal');
+        }
+        
+        const ab=Symbol("hello");           //symbol
+        console.log(ab);
+    
+    
+    </script>
+
+</body>
+
+</html>

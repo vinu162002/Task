@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Testing</title>
+    <link rel="stylesheet" href="testing.css">
+</head>
+
+<body>
+    <h1> Game </h1>
+    <button id="start">Start the game</button>
+    <p>Game has started</p>
+    <!-- <script src="test.js"></script> -->
+    <script>
+        const start=document.querySelector('button');
+        const end=document.querySelector('p');
+
+        start.addEventListener('click',testing);
+        function testing()
+        {
+            if(start.textContent === 'Start the game'){
+                start.textContent = 'stop the game';
+                end.textContent = 'Game has started';
+            }
+            else{
+                start.textContent ='Start the game';
+                end.textContent = 'Game has stopped';
+            }
+        }
+    </script>
+</body>
+
+</html>
