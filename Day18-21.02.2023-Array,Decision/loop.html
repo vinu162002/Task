@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Looping</title>
+    </head>
+    <body>
+        <script>
+            const pet = ['parrot','dog','cat','fish'];
+            for(const i of pet){
+                console.log(i);
+            }
+
+
+            function change(pets){
+                return pets.toUpperCase();
+            }
+            const pets = ['parrot','dog','cat','fish'];
+            const say = pets.map(change);
+            console.log(say);
+            
+            function Pet3(string){
+                return string.endsWith('t');
+            }
+            const pet1 = ['parrot','dog','cat','fish'];
+            const pet2 = pet1.filter(Pet3);
+            console.log(pet2);
+
+            for(let i=0;i<pets.length;i++){
+                console.log(pets[i]);
+            }
+            
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Strings</title>
+    </head>
+    <body>
+        <script>
+            const str='Happy!';
+            console.log(`I am ${str.repeat(5)} `);
+
+            const story='The fox ran fast to kill deer. The fox went closer to kill,while deer was running';
+            console.log(story.replace('fox','tiger'));
+            console.log(story.replaceAll('fox','tiger'));
+
+            console.log(story.slice(7));
+            console.log(story.slice(-7));
+            console.log(story.slice(4,13));
+
+            const words=story.split(' ');
+            console.log(words[5]);
+            const char=story.split('');
+            console.log(char[8]);
+
+            console.log(story.startsWith('The fox'));
+            console.log(story.startsWith('The fox',5));
+
+            console.log(story.substring(20));
+            console.log(story.substring(2,16));
+
+            console.log(story.toLowerCase());
+            console.log(story.toUpperCase());
+            
+            const stq=new String('Local');
+            console.log(stq);
+            console.log(stq.toString());
+
+            const wel='          Welcome               ';
+            console.log(wel);
+            console.log(wel.trim());
+
+            console.log(wel.trimEnd());
+            console.log(wel.trimStart());
+
+            console.log(stq.valueOf());
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        const fruits = ['Apple', 'Banana', 'Guava', 'Orange', 'Grapes'];
+        console.log(fruits.length);
+        console.log(fruits[3]);
+
+        const nuts = new Array(6);
+        console.log(nuts.length);
+        console.log(nuts[4]);
+
+        const arr = [1,2];
+        arr.length=5;
+        console.log(arr);
+
+        console.log(`I like to eat one fruit ,that is ${fruits.at(2)}`);
+
+        const extra=['Mango','DragonFruit','Cherry','Berry'];
+        console.log(fruits.concat(extra));
+        const num=[1,2,3,4];
+        const num2=[5,6,7,8];
+        const num3=[9,19,23,45];
+        console.log(num3.concat(num,num2));
+
+        const alp=['a','b','c','d','e','f'];
+        console.log(alp.copyWithin(0,3,4));
+        console.log(alp.copyWithin(0,3));
+        console.log(alp.copyWithin(2,4,5));
+
+        const alpha=['a','b','c','d','e']
+        const itr=alpha.entries();
+        console.log(itr.next().value);
+        console.log(itr.next().value);
+
+        const number=[1,2,3,4,5,6,7,8,9,0];
+        console.log(number.fill(88,4,8));
+
+        const array=[12,84,23,66,46];
+        const samp = array.find(element => element >80);
+        console.log(samp);
+        const smp =array.find(element=> element<20);
+        console.log(smp);
+
+        const ff = (element) => element > 10;
+        console.log(array.findIndex(ff));          //d
+
+        const feb = array.findLast(element => element >60);
+        console.log(feb);
+        
+        const mar=(element)=> element >60;
+        console.log(array.findLastIndex(mar));
+
+        const apr = [1,2,3,[4,5]];
+        console.log(apr.flat());
+        const april= [1,2,3,[[[4,6]]]];
+        console.log(april.flat(2));
+
+        const ju=[1,2,[3,4],[5]]
+        const may = ju.flatMap(num => num);
+        console.log(may);
+
+        const june=['a','b','c','d'];
+        june.forEach(element => console.log(element));
+
+        console.log(Array.from('food'));
+        console.log(Array.from([2,4,6],x => x+x));
+
+        console.log(fruits.includes('Grapes'));
+
+        console.log(fruits.indexOf('Orange'));
+        
+        console.log(Array.isArray([]));
+
+        console.log(extra.join());
+        console.log(extra.join(''));
+        console.log(extra.join('-'));
+
+        
+    </script>
+</body>
+
+</html>
