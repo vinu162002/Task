@@ -1,0 +1,72 @@
+html{
+    background-color:lightgrey;
+    text-align: center;
+   /* background-image: url("back.jpg");*/
+    background-size: cover;
+}
+.example{
+    font-style:bold;
+    color: darkred;
+}
+#simple{
+    border:1px solid black;
+}
+p{
+    text-align:center;
+    font-size: large;
+}
+h1{
+    text-align: center;
+    color:darkgreen;
+}
+h2{
+    text-align: center;
+    color:darkorange;
+}
+h3{
+    text-align: center;
+    color:darkorange;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid;
+    letter-spacing:1px;
+    font-size: 0.8rem;
+    margin:0 auto;
+}
+td {
+    border: 1px solid ;
+    padding: 10px 20px;
+    text-align: center;
+  }
+th{
+    text-align:center;
+}
+.about{
+    display:float;
+
+}
+p{
+    color:crimson;
+}
+
+
+a:link{
+    color:blueviolet;               /*For Unvisit link*/
+}
+a:visited{
+    color:green;                  /*For Visited link*/
+}
+a.pseud:hover{
+    font-size: 50px;
+    color:chartreuse;                /*mousing over the link*/
+}
+a:active{
+    color:darkred;              /*By selecting link*/
+}
+p:first-child i{
+    font-size: large;
+}
+p.foo::before{
+    content:url(foo.png);
+}

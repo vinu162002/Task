@@ -1,0 +1,55 @@
+.test{
+    text-align:center;
+}
+.line{
+    background-color:rosybrown;
+}
+
+
+
+img[alt]{
+    color:darkgreen;
+}
+a[class="low"]{
+    background-color:orange;
+}
+[div~="specified"]{
+    color:cadetblue;
+}
+[class|="attri"]{
+    color:darkviolet;
+}
+[class^="net"]{
+    color:crimson;
+}
+[class$="inter"]{
+    font-size:larger;
+}
+
+
+div+p{
+    font-style:normal;
+    background-color:green;
+    color:white;
+}
+#count{
+    columns: 8;      /*can also give as columns:2;*/ 
+    column-gap: 2em;
+}
+#width{
+    columns:20em;       /*can also give as columns:20em*/
+}
+p::first-letter{
+    color:rgb(231, 11, 11);
+    font-size: large;
+}
+p:first-child{
+    font-variant:small-caps;
+}
+p.select::selection{
+    color:black;
+    background-color: hotpink;
+}
+.container{
+    display:flex;
+}
