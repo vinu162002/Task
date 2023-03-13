@@ -1,0 +1,74 @@
+html{
+    background-color:lightgrey;
+    text-align: center;
+    background-image: url("back.jpg");
+    background-size: cover;
+}
+.example{
+    font-style:bold;
+    color: darkred;
+}
+#simple{
+    border:1px solid black;
+}
+p{
+    text-align:center;
+    font-size: large;
+}
+h1{
+    text-align: center;
+    color:darkgreen;
+}
+h2{
+    text-align: center;
+    color:darkorange;
+}
+h3{
+    text-align: center;
+    color:darkorange;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid;
+    letter-spacing:1px;
+    font-size: 0.8rem;
+    margin:0 auto;
+}
+td {
+    border: 1px solid ;
+    padding: 10px 20px;
+    text-align: center;
+  }
+th{
+    text-align:center;
+}
+.about{
+    margin:0 auto;
+}
+p{
+    color:blue;
+}
+.test{
+    text-align:center;
+}
+.line{
+    background-color:rosybrown;
+}
+img[alt]{
+    color:darkgreen;
+}
+a[class="low"]{
+    background-color:orange;
+}
+[div~="specified"]{
+    color:cadetblue;
+}
+[class|="attri"]{
+    color:darkviolet;
+}
+[class^="net"]{
+    color:crimson;
+}
+[class$="inter"]{
+    font-size:larger;
+}
